@@ -9,7 +9,7 @@ This example starts up a shared database and three different processes.
 The processes represent multiple users, or locations, or programs 
 hitting a shared database at the same time. 
 
-## Prerequiste
+## Prerequisite
 
 Complete the setup at [streaming-01-getting-started](https://github.com/denisecase/streaming-01-getting-started).
 
@@ -24,19 +24,14 @@ Executing multiple_processes.py script.
 Read the output. Read the code. 
 Try to figure out what's going on. 
 
-What libraries did we import?
-
-Where do we set the task_duration?
-
-How many functions are defined? 
-What are their names? 
-Can you figure out (in general) what they do?
-
-Where does the execution begin?
-
-How many processes do we start?
-
-How many records does each process insert?
+1. What libraries did we import?
+1. Where do we set the task_duration?
+1. How many functions are defined? 
+1. What are the function names? 
+1. In general, what does each function do? 
+1. Where does the execution begin?
+1. How many processes do we start?
+1. How many records does each process insert?
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 
@@ -82,21 +77,15 @@ On a Mac the select all, copy, paste hotkeys are:
 - Command c
 - Command v
 
-Detailed instructions (as needed)
+Detailed copy/paste instructions (as needed)
 
 1. To use these keys to transfer your output into a file, 
 clear the terminal, run the script, then click in the terminal to make it active.
-
 1. To select all terminal content, hold CTRL and the 'a' key together. 
-
 1. To copy the selected content, hold CTRL and the 'c' key together. 
-
 1. To paste, open the destination file (e.g. out0.py) for editing.
-
 1. Click somewhere in the destination file to make it the active window.
-
 1. Now hit CTRL a (both together) to select all of the destination file.
-
 1. Hit CTRL v (both together) to paste the content from your clipboard.
 
 Do a web search to find helpful videos on anything that seems confusing. 
@@ -106,25 +95,23 @@ Do a web search to find helpful videos on anything that seems confusing.
 Python has pretty helpful error messages. 
 When you get an error, read them carefully. 
 
-What's the error? 
-
-Can you tell what line it was executing when it failed?
+- What error do you get?
+- Can you tell what line it was executing when it failed?
 
 
 ## Database Is Locked Error
 
 Do a web search on the sqlite3 'database is locked' error.
 
-What do you learn?
-
-Once a process fails, it crashes the main process and everything stops. 
+- What do you learn?
+- Once a process fails, it crashes the main process and everything stops. 
 
 ## Deadlock
 
 Deadlock is a special kind of locking issue where a proces 
-is waiting on a resource or process, that is in turn waiting itself. 
+is waiting on a resource or process, that is waiting also. 
 
-Rather than crashing it may just wait indefinitely, 
+Rather than crashing, a system in deadlock may wait indefinitely, 
 with no process able to move forward and make progress.
 
 ## Learn More
