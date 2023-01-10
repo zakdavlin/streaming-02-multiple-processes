@@ -1,0 +1,7 @@
+In the console, type clear and hit Enter or Return. 
+
+This will clear the console output. 
+
+Run the file once while the tasks are longer. 
+
+Copy and paste the terminal results (when task_duration is 3) here.
