@@ -1,0 +1,19 @@
+PS C:\Users\zdavl\Documents\Streaming Data\streaming-02-multiple-processes> & C:/Users/zdavl/miniconda3/python.exe "c:/Users/zdavl/Documents/Streaming Data/streaming-02-multiple-processes/Process_Streaming_Davlin.py"
+Sent: b'[PlayerNo,card1,card2,card3,card4,card5,sumofcards,dealcard1,dealcard2,dealcard3,dealcard4,dealcard5,sumofdeal,blkjck,winloss,plybustbeat,dlbustbeat,plwinamt,dlwinamt,ply2cardsum]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,1,1,9,25,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,1,10,0,25,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,10,0,0,24,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,10,0,0,24,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,10,0,0,24,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,4,0,0,18,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,4,0,0,18,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,7,0,0,21,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,10,8,0,0,22,nowin,Win,DlBust,Bust,20,0,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,11,1,3,0,19,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,11,1,5,0,21,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Sent: b'[Player1,1,1,10,0,0,12,4,2,4,10,0,20,nowin,Loss,Beat,Dlwin,0,10,2]' on port 9999.
+Traceback (most recent call last):
+  File "c:\Users\zdavl\Documents\Streaming Data\streaming-02-multiple-processes\Process_Streaming_Davlin.py", line 64, in <module>
+    time.sleep(3)
+KeyboardInterrupt
+PS C:\Users\zdavl\Documents\Streaming Data\streaming-02-multiple-processes> 

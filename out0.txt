@@ -5,3 +5,38 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+
+STARTING UP............................. 
+It's 2023-01-16 at 09:07 PM
+
+This file is running on:    nt Windows 10
+The Python version is:      3.9.12       
+
+The Python interpreter is at:
+ C:\Users\zdavl\miniconda3\python.exe    
+
+
+DELETED tabble pets.
+CREATED table pets.
+
+P3 getting ready to insert Emma the Rabbit.
+P1 getting ready to insert Ace the Dog.
+P2 getting ready to insert Cooper the Rabbit.
+P3 ADDED Emma the Rabbit.
+P1 ADDED Ace the Dog.
+P3 getting ready to insert Felix the Cat.
+P1 getting ready to insert Buddy the Dog.
+P1 ADDED Buddy the Dog.
+P2 ADDED Cooper the Rabbit.
+P2 getting ready to insert Dufus the Dog.
+P2 ADDED Dufus the Dog.
+P3 ADDED Felix the Cat.
+
+SUCCESS! All processes are done.
+Now - increase the task duration (representing
+      the time the task has the database
+      tied up during an insert statement).
+How well do the multiple, concurrent processes share a database
+when each task can take more time?
+How can we let multiple processes share a resource
+without interfering with each other?
