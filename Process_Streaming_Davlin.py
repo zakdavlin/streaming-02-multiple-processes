@@ -39,6 +39,18 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # read from a file to get some fake data
 input_file = open("blkjckhands.csv", "r")
 
+reader = csv.reader(input_file, delimiter=",")
+#### output file ####
+# open the output file
+output_file_name = "out9.txt"
+output_file = open(output_file_name, "w", newline='')
+# create a writer for the output
+writer = csv.writer(output_file, delimiter=",")
+
+# define header column names and write to output file
+header = next(reader)
+header_list = ["PlayerNo","card1","card2","card3","card4","card5","sumofcards","dealcard1","dealcard2","dealcard3","dealcard4","dealcard5","sumofdeal","blkjck","winloss","plybustbeat","dlbustbeat","plwinamt","dlwinamt","ply2cardsum"] 
+writer.writerow(header_list)
 # use the built0in sorted() function to get them in chronological order
 reversed = sorted(input_file)
 
@@ -59,6 +71,9 @@ for row in reader:
     # use the socket sendto() method to send the message
     sock.sendto(MESSAGE, address_tuple)
     print (f"Sent: {MESSAGE} on port {port}.")
-
+ # write the data to the output file
+    writer.writerow([index, PlayerNo, card1, card2, card3, card4, card5, sumofcards, dealcard1, dealcard2, dealcard3, dealcard4, dealcard5, sumofdeal, blkjck, winloss, plybustbeat, dlbustbeat, plwinamt, dlwinamt, ply2cardsum])
     # sleep for a few seconds
-    time.sleep(3)
+    time.sleep(1)
+output_file.close()
+input_file.close()
